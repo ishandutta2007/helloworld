@@ -2,7 +2,7 @@ from setuptools import setup
 
 ## HINT: py2app is smart enough to recognize that some packages, like numpy,
 ##       should not be zipped up.  That is, they should *not* be forced into 
-##       helloworld.app/Contents/Resources/lib/python2.7/site-packages.zip
+##       pyapp.app/Contents/Resources/lib/python2.7/site-packages.zip
 ## 
 ##       However, py2app doesn't know about your own packages.  If you have 
 ##       a package that fails to import correctly in the final app, try forcing
@@ -39,6 +39,6 @@ setup(name='pyapp',
       description='A simple greeting using pyqt',
       author='Stuart Berg',
       author_email='stuarteberg@gmail.com',
-      url='github.com/stuarteberg/helloworld',
+      url='github.com/ishandutta2007/pyapp',
       packages=['pyapp']
      )
