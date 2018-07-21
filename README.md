@@ -42,7 +42,7 @@ conda install conda-build
 ------------------
 
 ```
-git clone http://github.com/stuarteberg/helloworld
+git clone http://github.com/ishandutta2007/helloworld
 ```
 
 2. Build the recipe
@@ -63,7 +63,7 @@ Before we can build the app, we'll need an environment with all the app's depend
 The easiest way to do this is to simply install the package we just built, since it lists the dependencies it needs.
 
 ```
-conda create -n app-env --use-local helloworld
+conda create -n app-env --use-local pyapp
 ```
 
 Of course, in addition to the dependencies, we'll also need `py2app`.
@@ -83,7 +83,7 @@ Before we generate the app, let's verify that our python code here actually work
 
 ```
 source activate app-env
-PYTHONPATH=. python helloworld/main.py
+PYTHONPATH=. python pyapp/main.py
 ```
 
 You should see something like this:
@@ -99,8 +99,8 @@ python setup.py py2app
 The app was placed in the `dist` folder.  Does it work?  Let's try it...
 
 ```
-open dist/helloworld.app
+open dist/pyapp.app
 ```
 
-You can send `helloworld.app` to your friends, and they can start enjoying it immediately.
+You can send `pyapp.app` to your friends, and they can start enjoying it immediately.
 No further installation required.
