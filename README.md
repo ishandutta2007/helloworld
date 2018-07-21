@@ -73,6 +73,7 @@ Here, we install a special build of py2app, in which that bug has been fixed alr
 
 ```
 conda install -n app-env -c stuarteberg py2app
+conda install -n app-env -c stuarteberg pyqt=4
 ```
 
 4. Build the app
