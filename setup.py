@@ -32,13 +32,13 @@ OPTIONS = { 'dist_dir' : 'dist',
             'iconfile' : 'resources/Tsukasa-Tux-Daft-Punks-Thomas-Hello.icns', # http://www.iconarchive.com/tag/hello-world
             'alias': False }
 
-setup(name='helloworld',
-      app=['helloworld/main.py'],
+setup(name='pyapp',
+      app=['pyapp/main.py'],
       options={'py2app': OPTIONS},
       version='0.1',
       description='A simple greeting using pyqt',
       author='Stuart Berg',
       author_email='stuarteberg@gmail.com',
       url='github.com/stuarteberg/helloworld',
-      packages=['helloworld']
+      packages=['pyapp']
      )
