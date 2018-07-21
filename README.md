@@ -1,4 +1,4 @@
-helloworld - Build a conda package, then build an OSX app with it
+pyapp - Build a conda package, then build an OSX app with it
 =================================================================
 
 This example code shows how to build an OSX `.app` bundle using `py2app`[py2app][].
@@ -42,7 +42,7 @@ conda install conda-build
 ------------------
 
 ```
-git clone http://github.com/ishandutta2007/helloworld
+git clone http://github.com/ishandutta2007/pyapp
 ```
 
 2. Build the recipe
@@ -52,7 +52,7 @@ This step isn't strictly necessary for the purposes of building the app,
 but since we're covering both conda and py2app in this tutorial, let's build the conda package.
 
 ```
-cd helloworld
+cd pyapp
 conda build conda-recipe 
 ```
 
@@ -88,7 +88,7 @@ PYTHONPATH=. python pyapp/main.py
 
 You should see something like this:
 
-![screenshot](https://raw.githubusercontent.com/stuarteberg/helloworld/master/resources/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/ishandutta2007/pyapp/master/resources/screenshot.png)
 
 Now let's build the app!
 
