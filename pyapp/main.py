@@ -1,6 +1,6 @@
 import signal
 from PyQt4.QtGui import QApplication
-from helloworld.greetingwidget import GreetingWidget
+from pyapp.logicwidget import LogicWidget
 
 def main():
     # Ctrl+C should kill the program
@@ -8,9 +8,9 @@ def main():
 
     app = QApplication([])
 
-    window = GreetingWidget()
+    window = LogicWidget()
     window.show()
-    window.raise_()    
+    window.raise_() 
 
     app.exec_()
 
